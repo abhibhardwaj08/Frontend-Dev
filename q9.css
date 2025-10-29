@@ -1,0 +1,14 @@
+/* Q9 - Newspaper/magazine columns */
+body{background:#f4f5f6;margin:0;font-family:Georgia,serif;color:#111}
+.paper{max-width:1100px;margin:2rem auto;padding:1.25rem;background:#fff;border-radius:8px}
+.headline{text-align:center;font-size:2.2rem;margin-bottom:1rem}
+.columns{column-count:3;column-gap:2rem;column-rule:1px solid rgba(0,0,0,.06);text-align:justify}
+.columns p{margin:0 0 1rem}
+.column-span{column-span:all}
+
+/* Float an image */
+.float-img{float:left;width:160px;height:100px;margin:0 .8rem .8rem 0;border-radius:6px;object-fit:cover}
+
+/* Responsive reduce columns */
+@media (max-width:900px){.columns{column-count:2}}
+@media (max-width:600px){.columns{column-count:1}}

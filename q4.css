@@ -1,0 +1,17 @@
+/* Q4 - Article styling with ::first-letter, ::first-line, mark and blockquote emphasis */
+body{font-family:Georgia,serif;background:#fafafa;color:#111;margin:2rem}
+.article{max-width:800px;margin:0 auto}
+.meta{color:#6b7280;font-size:0.95rem;margin-top:-8px}
+.content p{margin:1.2rem 0;text-align:justify}
+
+/* First letter larger */
+.content p::first-letter{font-size:2.4rem;font-weight:700;float:left;margin-right:.3rem;color:#0b4a6f}
+
+/* First line bold */
+.content p::first-line{font-weight:700}
+
+/* Mark styling */
+mark{background:#fff3b0;padding:0 .2rem;border-radius:2px}
+
+/* Blockquote with left border and background */
+blockquote{border-left:6px solid #ffb86b;background:#fff7ef;padding:1rem;margin:1.5rem 0}

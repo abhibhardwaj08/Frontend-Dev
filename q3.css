@@ -1,0 +1,18 @@
+/* Q3 - Team members grid/flex with responsiveness */
+body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:2rem;background:#f5f7fb;color:#0b2545}
+.wrap{max-width:1100px;margin:0 auto}
+h1{text-align:center;margin-bottom:1.5rem}
+.team{display:flex;gap:1rem;align-items:stretch}
+
+/* Card styles - box model, padding, border, shadow */
+.card{flex:1;padding:1.25rem;margin:0;border:2px solid rgba(11,37,69,.06);border-radius:12px;box-shadow:0 6px 18px rgba(11,37,69,.06);background:#fff}
+.card h3{margin:.25rem 0}
+.card .role{font-weight:700;color:#186fa8;margin-bottom:.5rem}
+
+/* Highlight lead */
+.card.lead{background:#e9f5ff;border:2px solid #1e88ff;transform:translateY(-4px)}
+
+/* Responsive: single column under 600px */
+@media (max-width:600px){
+  .team{flex-direction:column}
+}
