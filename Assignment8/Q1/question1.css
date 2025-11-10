@@ -1,0 +1,20 @@
+/* Q1 — Pseudo-Classes demo */
+/* Layout: Flexbox row */
+:root{--card-bg:#f8f9fa;--accent:#3b82f6}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:#fff;color:#111;margin:0;padding:20px}
+header h1{margin:0 0 12px}
+.intro{margin-bottom:16px}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.card{background:var(--card-bg);padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06);width:260px}
+.demo-link{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;background:#e6eefc;color:var(--accent)}
+/* :hover example */
+.demo-link:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
+/* :focus and :active example for button */
+.demo-btn{padding:10px 14px;border-radius:8px;border:2px solid #cfe0ff;background:white;cursor:pointer}
+.demo-btn:focus{outline:3px solid rgba(59,130,246,0.25)}
+.demo-btn:active{transform:translateY(2px);box-shadow:inset 0 2px 6px rgba(0,0,0,0.06)}
+/* :nth-child example */
+.demo-list{padding-left:20px}
+.demo-list li{padding:6px;border-radius:4px}
+.demo-list li:nth-child(odd){background:#eef2ff}

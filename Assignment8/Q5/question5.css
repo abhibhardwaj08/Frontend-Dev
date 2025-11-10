@@ -1,0 +1,18 @@
+/* Q5 — Button styles */
+*{box-sizing:border-box}
+body{font-family:Arial;margin:24px}
+.btn-row{display:flex;gap:12px;align-items:center}
+.btn{padding:10px 16px;border-radius:10px;border:none;cursor:pointer;box-shadow:0 4px 10px rgba(2,6,23,0.08);transition:transform 0.15s ease,box-shadow 0.15s ease;outline:none}
+/* Primary */
+.btn.primary{background:#2563eb;color:#fff}
+/* Secondary */
+.btn.secondary{background:#e2e8f0;color:#0f172a}
+/* Outline */
+.btn.outline{background:transparent;border:2px solid #94a3b8;color:#0f172a}
+/* Hover and active effects */
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(0)}
+/* Focus state */
+.btn:focus{box-shadow:0 0 0 4px rgba(37,99,235,0.15)}
+/* Disabled */
+.btn[disabled]{opacity:0.5;cursor:not-allowed;box-shadow:none}

@@ -1,0 +1,22 @@
+/* Q4 — Selectors practice */
+/* Element selector - targets all h2 elements */
+h2{margin-top:20px;color:#0f172a}
+
+/* Class selector - .highlight */
+.highlight{background:#fef3c7;padding:8px;border-radius:6px}
+
+/* ID selector - #unique */
+#unique{border-left:4px solid #60a5fa;padding-left:8px}
+
+/* Attribute selector - [data-role="nav"] */
+a[data-role="nav"]{display:inline-block;margin:8px 0;padding:6px 8px;background:#eef2ff;border-radius:6px;text-decoration:none}
+
+/* Combinators */
+/* Parent > child (direct child) */
+.parent > p{margin:6px 0;padding:6px;border-radius:4px;background:#f8fafc}
+/* Adjacent sibling + (will style the paragraph immediately after .sibling if used) */
+.sibling + p{border:2px dashed #c7d2fe;padding:6px}
+/* General sibling ~ */
+.sibling ~ span{font-style:italic;color:#64748b}
+/* Descendant selector */
+.parent span strong{color:#0ea5a4}

@@ -1,0 +1,12 @@
+/* Q8 — Box-sizing comparison */
+body{font-family:Arial;margin:20px}
+.center{display:flex;gap:24px;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.example{width:300px;text-align:center}
+.box{width:200px;padding:20px;border:8px solid #94a3b8;background:#f8fafc;border-radius:8px;margin:8px auto}
+/* default is content-box */
+.box.default{box-sizing:content-box;background:#fff}
+/* border-box */
+.box.border{box-sizing:border-box;background:#eef2ff}
+/* Description text */
+.desc{font-size:13px;color:#475569}
+@media(max-width:640px){.center{flex-direction:column;align-items:center}}
