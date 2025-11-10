@@ -1,0 +1,32 @@
+/* Responsive Image Filter Gallery */
+:root{
+  --gap: 1rem;
+  --max-width: 1100px;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:0;padding:1rem;display:flex;flex-direction:column;align-items:center}
+header h1{margin:0 0 1rem 0;text-align:center}
+.gallery{
+  width:100%;
+  max-width:var(--max-width);
+  display:grid;
+  gap:var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+figure{margin:0;display:flex;flex-direction:column;align-items:stretch}
+figure img{width:100%;height:200px;object-fit:cover;display:block;transition:filter 300ms ease, transform 300ms ease}
+figure figcaption{text-align:center;padding:0.5rem 0}
+.gallery figure:nth-child(1) img{filter:blur(3px)}
+.gallery figure:nth-child(2) img{filter:grayscale(100%)}
+.gallery figure:nth-child(3) img{filter:sepia(80%)}
+.gallery figure:nth-child(4) img{filter:brightness(0.7)}
+.gallery figure:nth-child(5) img{filter:contrast(140%)}
+.gallery figure:nth-child(6) img{filter:hue-rotate(90deg)}
+/* Remove filter on hover */
+figure:hover img{filter:none;transform:scale(1.02)}
+/* Stack to single column below 600px */
+@media (max-width:600px){
+  .gallery{grid-template-columns:1fr}
+  figure img{height:220px}
+}
+footer{margin-top:1rem;opacity:0.8}
